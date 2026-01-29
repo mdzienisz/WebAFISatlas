@@ -45,3 +45,16 @@ body, html {
 .overlay p {
   font-size: 1.5em;
 }
+
+/* Logo *?
+.logo-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    
+    .logo-container img {
+      max-width: 150px;
+      height: auto;
+    }
