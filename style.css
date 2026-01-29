@@ -1,5 +1,47 @@
-body {
-  background: black;
-  color: white;
+/* Reset marginesów */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
   font-family: Arial, sans-serif;
+}
+
+/* Wideo w tle */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* dopasowuje wideo do ekranu */
+  z-index: -1;       /* tekst będzie na wierzchu */
+}
+
+/* Tekst i przyciemnienie */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* przyciemnienie wideo */
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.overlay p {
+  font-size: 1.5em;
 }
